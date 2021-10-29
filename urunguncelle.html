@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<title>SECGETIR</title>
+</head>
+
+<body>
+	<div class="topnav">
+		<a href="urunekle.html">Ürün Ekle</a>
+		<a href="urunsil.html">Ürün Sil</a>
+		<a href="urunguncelle.html" class="active">Ürün Güncelle</a>
+		<a href="fatura.php">Fatura</a>
+	</div>
+
+	<div style="padding-left:16px">
+		<form action="urunguncelle.php" method="POST" enctype="multipart/form-data">
+			<br>
+			<br>
+			<table border="1" align="center">
+				<tr>
+					<td><label for="ad">Ürün Adı</label></td>
+					<td colspan="1"><input type="text" name="u_ad" id="u_ad" required></td>
+				</tr>
+				<tr>
+					<td>Ürün No</td>
+					<td colspan="1"><input type="number" name="u_no" id="u_no" required placeholder="Ürün No Girin">
+					</td>
+				</tr>
+				<tr>
+					<td>Ürün Maliyeti</td>
+					<td colspan="1"><input type="number" name="u_maliyet" id="u_maliyet" required
+							placeholder="Maliyeti Girin"></td>
+				</tr>
+				<tr>
+					<td>Ürün Adedi</td>
+					<td><input type="number" name="u_adedi" id="u_adedi" required placeholder="Adedi Gir"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align="center"><input type="submit" name="guncelle" id="guncelle" value="Güncelle"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+
+</body>
+
+</html>

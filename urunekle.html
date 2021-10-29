@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+	</style>
+		
+		<link rel="stylesheet" type="text/css" href="menu.css">
+		<title>SECGETIR</title>
+	</head>
+	<body>
+	<div class="topnav">
+    <a href="urunekle.html" class="active">Ürün Ekle</a>
+  	<a href="urunsil.html">Ürün Sil</a>
+  	<a href="urunguncelle.html">Ürün Güncelle</a>
+    <a href="fatura.php">Fatura</a>
+</div>
+
+<div style="padding-left:16px">
+	<form action="urunekle.php" method="post" enctype="multipart/form-data">
+		<br> 
+		<br>
+		<table border="1" align="center">
+			<tr>
+			<td><label for="ad">Ürün Adı</label></td>
+				<td colspan="1"><input type="text" name="u_ad" id="u_ad" required></td>
+			</tr>
+			<tr>
+			<td>Ürün No</td>
+			<td colspan="1"><input type="number" name="u_no" id="u_no" required placeholder="Ürün No Girin"></td>
+			</tr>
+			<tr>
+			<td>Ürün Resim Seçiniz</td>
+				<td><input type="text" name="resim_ismi" id="resim_ismi" required placeholder="Ürün ismi girin">
+					<input type="file" name="img" id="img"></td>
+			</tr>
+			<tr>
+				<td>Ürün Türü</td> 
+			<td><select name="secim" id="secim">
+				<option>Tür Seçin</option>		
+				<option>Giyim</option>
+			<option>Teknoloji</option>
+			<option>Yiyecek</option>
+			<option>İçecek</option>	
+				</select></td>
+			</tr>
+			<tr>
+			<td>Ürün Maliyeti</td>
+				<td colspan="1"><input type="number" name="u_maliyet"  id="u_maliyet" required placeholder="Maliyeti Girin"></td>
+			</tr>
+			<tr>
+			<td>Ürün Adedi</td>
+				<td><input type="number" name="u_adedi" id="u_adedi" required placeholder="Adedi Gir"></td>
+			</tr>
+			<tr>
+			<td>Ürün Giriş Tarihi</td>
+				<td><input type="date" name="u_tarihi" id="u_tarihi"></td>
+			</tr>
+			<tr>
+				<td></td>
+			<td ><input type="submit" name="kaydet" value="Kaydet"</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+
+	</body>
+</html> 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+	</style>
+		
+		<link rel="stylesheet" type="text/css" href="menu.css">
+		<title>SECGETIR</title>
+	</head>
+	<body>
+	<div class="topnav">
+    <a href="urunekle.html">Ürün Ekle</a>
+  	<a href="urunsil.html" class="active">Ürün Sil</a>
+  	<a href="urunguncelle.html">Ürün Güncelle</a>
+    <a href="fatura.php">Fatura</a>
+</div>
+
+<div style="padding-left:16px">
+	<form action="urunsil.php" method="post" enctype="multipart/form-data">
+		<br> 
+		<br>
+		<table border="1" align="center">
+			<tr>
+			<td><label for="ad">Ürün Adı</label></td>
+				<td colspan="1"><input type="text" name="u_ad" id="u_ad" required></td>
+			</tr>
+			<tr>
+			<td>Ürün No</td>
+			<td colspan="1"><input type="number" name="u_no" id="u_no" required placeholder="Ürün No Girin"></td>
+			</tr>
+			<tr>
+				<td></td>
+			<td align="center"><input type="submit" name="del" value="Sil"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+
+	</body>
+</html>
